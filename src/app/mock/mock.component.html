@@ -1,0 +1,26 @@
+<div>
+  <h1>Vasu Work</h1>
+  <br />
+  <button class="btn btn-success" (click)="showData()">Show Data</button> &nbsp;
+  <button class="btn btn-danger" (click)="hideData()">Hide Data</button>
+  <br />
+  <br />
+  <table class="table" *ngIf="isActive">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Job Description</th>
+        <th scope="col">Position</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr *ngFor="let item of data">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.job_description }}</td>
+        <td>{{ item.position }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

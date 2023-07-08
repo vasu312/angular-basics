@@ -1,0 +1,25 @@
+{
+    "anime": [
+      {
+        "id": 1,
+        "name": "Monkey D. Luffy",
+        "manga": "One Piece",
+        "fav": "Zoro",
+        "episode":1067
+      },
+      {
+        "id": 2,
+        "name": "Tanjiro Kamado",
+        "manga": "Demon Slayer",
+        "fav": "Shinobu",
+        "episode":1067
+      },
+      {
+        "id": 3,
+        "name": "Naruto",
+        "manga": "Naruto Shippuden",
+        "fav": "Kakashi Hatake",
+        "episode":500
+      }
+    ]
+  }

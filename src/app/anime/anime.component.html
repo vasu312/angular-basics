@@ -1,0 +1,24 @@
+<h1>Rakesh Work</h1>
+<br />
+<h1>Welcome to Otaku Monkeys</h1>
+<button class="btn btn-info" (click)="showAnime()">Anime List</button>&nbsp;
+<button class="btn btn-warning" (click)="hideAnime()">Anime Hide</button>
+
+<table class="table" *ngIf="animeActive">
+  <tbody>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Manga</th>
+      <th scope="col">Favorite</th>
+      <th scope="col">Total Episodes</th>
+    </tr>
+  </tbody>
+  <tbody class="table-group-divider">
+    <tr *ngFor="let ani of animedata">
+      <td>{{ ani.name }}</td>
+      <td>{{ ani.manga }}</td>
+      <td>{{ ani.fav }}</td>
+      <td>{{ ani.episode }}</td>
+    </tr>
+  </tbody>
+</table>
