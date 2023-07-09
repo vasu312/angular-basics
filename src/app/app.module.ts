@@ -10,6 +10,7 @@ import { AnimeComponent } from './anime/anime.component';
 import { MockComponent } from './mock/mock.component';
 import { FormComponent } from './form/form.component';
 import { HomeComponent } from './home/home.component';
+import { CssComponent } from './css/css.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     AnimeComponent,
     MockComponent,
     FormComponent,
-    HomeComponent
+    HomeComponent,
+    CssComponent
   ],
   imports: [
     BrowserModule,

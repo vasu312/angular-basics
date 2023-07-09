@@ -2,6 +2,20 @@
   padding: 30px !important;
 }
 
-.nav-theme{
-  color:#ffff;
+.nav-theme {
+  color: #ffff;
+}
+
+.navbar{
+  border-radius:0 !important;
+}
+
+.active {
+  background-color: green;
+  border-radius: 5px;
+}
+
+.nav-link {
+  padding: 5px 2rem !important;
+  text-decoration: none;
 }

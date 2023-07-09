@@ -4,13 +4,15 @@ import { AnimeComponent } from './anime/anime.component';
 import { FormComponent } from './form/form.component';
 import { MockComponent } from './mock/mock.component';
 import { HomeComponent } from './home/home.component';
+import { CssComponent } from './css/css.component';
 
 const routes: Routes = [
 
   { path: 'home', component: HomeComponent },
   { path: 'anime', component: AnimeComponent },
   { path: 'form', component: FormComponent },
-  { path: 'mock', component: MockComponent }
+  { path: 'mock', component: MockComponent },
+  { path: 'css', component: CssComponent }
 ];
 
 @NgModule({
