@@ -5,14 +5,14 @@
 <button class="btn btn-warning" (click)="hideAnime()">Anime Hide</button>
 
 <table class="table" *ngIf="animeActive">
-  <tbody>
+  <thead class="bg-success ">
     <tr>
       <th scope="col">Name</th>
       <th scope="col">Manga</th>
       <th scope="col">Favorite</th>
       <th scope="col">Total Episodes</th>
     </tr>
-  </tbody>
+  </thead>
   <tbody class="table-group-divider">
     <tr *ngFor="let ani of animedata">
       <td>{{ ani.name }}</td>

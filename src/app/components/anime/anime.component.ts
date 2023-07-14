@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiService } from '../services/info.service';
+import { ApiService } from 'src/app/services/info.service';
 
 @Component({
   selector: 'app-anime',
@@ -7,12 +7,9 @@ import { ApiService } from '../services/info.service';
   styleUrls: ['./anime.component.css'],
 })
 export class AnimeComponent {
-  animedata: any = 'Value is not set';
-
-  animeActive = true;
-
+  animedata: any = [];
+  animeActive: boolean = true;
   constructor(private apiService: ApiService) {}
-
   showAnime() {
     this.animeActive = true;
     this.apiService.getanimeData().subscribe((dev) => {

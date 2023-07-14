@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row" style="height: 100%;">
+    <div class="left col-6 ">
+      <input class=" input " type="text" [(ngModel)]="location" />
+      <button class="btn btn-success" (click)="getWeatherInfo()">Search</button>
+    </div>
+    <div class="right col-6">
+      <div class="upperdata h-50 w-100">
+        <img class="img-fluid" src="https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg" alt="bg-wt">
+      </div>
+      <div class="lowerdata h-50 w-100">
+        <h1>
+          Weather in {{ weatherDetails.name }} is
+          {{ weatherDetails.weather[0].description }}
+        </h1>
+        <h1>
+          Temperature is
+          {{ weatherDetails.main.temp }}
+          Celcius
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="search-box">
+    <input type="text" [(ngModel)]="location" />
+    <button class="btn btn-success" (click)="getWeatherInfo()">Search</button>
+    <span class="text-danger">Please enter location</span>
+  </div> -->
+
+
